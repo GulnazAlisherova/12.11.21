@@ -12,5 +12,5 @@ div {
   left: 0;
 
   animation-name: move;
-  
+  animation-duration: 1s;
 }
