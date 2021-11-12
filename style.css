@@ -125,18 +125,21 @@ div:nth-child(6) {
     transform:  translateZ(0px);
   }
 }
-div:nth-child(7):hover {
-  transform: translate( -10px, -10px) ;
+div:nth-child(7) {
+  animation-name: translate ;
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
 }
-@keyframes skewY {
+@keyframes translate {
   0% {
-    transform: skewY(0deg);
+    transform: translate(0deg);
   }
   50% {
-    transform: skewY(40deg);
+    transform: translate(-10px, -10px);
   }
   100%{
-    transform: skewY(0deg);
+    transform: translate(0deg);
   }
 }
 div:nth-child(8):hover {
