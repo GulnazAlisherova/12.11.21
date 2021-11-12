@@ -194,18 +194,22 @@ div:nth-child(10) {
     transform: rotateZ(0deg);
   }
 }
-div:nth-child(11):hover {
-  transform: rotate(50deg) ;
+div:nth-child(11) {
+  animation-name: rotate ;
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
 }
-@keyframes skewY {
+}
+@keyframes rotate {
   0% {
-    transform: skewY(0deg);
+    transform: rotate(0deg);
   }
   50% {
-    transform: skewY(40deg);
+    transform: rotate(50deg);
   }
   100%{
-    transform: skewY(0deg);
+    transform: rotate(0deg);
   }
 }
 div:nth-child(12):hover {
