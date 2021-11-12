@@ -1,6 +1,6 @@
 div {
   padding: 10px;
-  background-color: tomato;
+  background-color: rgb(248, 77, 47);
   color: white;
   font-size: 1.5rem;
   display: inline-block;
@@ -19,4 +19,46 @@ height: 100%;
 margin: 30px;
 
 transition: transform 1s ease-in-out;
+}
+div:nth-child(1):hover {
+  transform: skewX(40deg);
+}
+div:nth-child(2):hover {
+  transform: skewY(40deg);
+}
+div:nth-child(3):hover {
+  transform: skew(40deg);
+}
+div:nth-child(4):hover {
+  transform: translateX( -60px) ;
+}
+div:nth-child(5):hover {
+  transform: translateY( -10px) ;
+}
+div:nth-child(6):hover {
+  transform: translateZ( -50px) ;
+}
+div:nth-child(7):hover {
+  transform: translate( -10px, -10px) ;
+}
+div:nth-child(8):hover {
+  transform: rotateX(50deg) ;
+}
+div:nth-child(9):hover {
+  transform: rotateY(50deg) ;
+}
+div:nth-child(10):hover {
+  transform: rotateZ(50deg) ;
+}
+div:nth-child(11):hover {
+  transform: rotate(50deg) ;
+}
+div:nth-child(12):hover {
+  transform: scaleX( 50deg) ;
+}
+div:nth-child(13):hover {
+  transform: rotateY( 50deg) ;
+}
+div:nth-child(14):hover {
+  transform: rotate( 50deg) ;
 }
