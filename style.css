@@ -1,6 +1,6 @@
 div {
-  padding: 10px;
-  background-color: rgb(248, 77, 47);
+  padding: 15px;
+  background-color: tomato;
   color: white;
   font-size: 1.5rem;
   display: inline-block;
@@ -20,8 +20,22 @@ margin: 30px;
 
 transition: transform 1s ease-in-out;
 }
-div:nth-child(1):hover {
-  transform: skewX(40deg);
+div:nth-child(1) {
+  animation-name: skewX;
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+}
+@keyframes skewX {
+  0% {
+    transform: skewX(0deg);
+  }
+  50% {
+    transform: skewX(40deg);
+  }
+  100%{
+    transform: skewX(0deg);
+  }
 }
 div:nth-child(2):hover {
   transform: skewY(40deg);
@@ -54,11 +68,14 @@ div:nth-child(11):hover {
   transform: rotate(50deg) ;
 }
 div:nth-child(12):hover {
-  transform: scaleX( 50deg) ;
+  transform: scale(2, .5);
 }
 div:nth-child(13):hover {
-  transform: rotateY( 50deg) ;
+  transform: scaleY(2);
 }
 div:nth-child(14):hover {
-  transform: rotate( 50deg) ;
+  transform: scaleX(2);
+}
+div:nth-child(15):hover {
+  transform: scaleZ(2);
 }
