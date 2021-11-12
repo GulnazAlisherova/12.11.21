@@ -160,18 +160,21 @@ div:nth-child(8) {
     transform: rotateX(0deg);
   }
 }
-div:nth-child(9):hover {
-  transform: rotateY(50deg) ;
+div:nth-child(9) {
+   animation-name: rotateY ;
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
 }
-@keyframes skewY {
+@keyframes rotateY {
   0% {
-    transform: skewY(0deg);
+    transform: rotateY(0deg);
   }
   50% {
-    transform: skewY(40deg);
+    transform: rotateY(50deg);
   }
   100%{
-    transform: skewY(0deg);
+    transform: rotateY(0deg);
   }
 }
 div:nth-child(10):hover {
