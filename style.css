@@ -142,18 +142,22 @@ div:nth-child(7) {
     transform: translate(0deg);
   }
 }
-div:nth-child(8):hover {
-  transform: rotateX(50deg) ;
+div:nth-child(8) {
+  
+  animation-name: rotateX ;
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
 }
-@keyframes skewY {
+@keyframes rotateX {
   0% {
-    transform: skewY(0deg);
+    transform: rotateX(0deg);
   }
   50% {
-    transform: skewY(40deg);
+    transform: rotateX(50deg);
   }
   100%{
-    transform: skewY(0deg);
+    transform: rotateX(0deg);
   }
 }
 div:nth-child(9):hover {
