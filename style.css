@@ -37,45 +37,214 @@ div:nth-child(1) {
     transform: skewX(0deg);
   }
 }
-div:nth-child(2):hover {
-  transform: skewY(40deg);
+div:nth-child(2) {
+  animation-name: skewY;
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
 }
-div:nth-child(3):hover {
-  transform: skew(40deg);
+@keyframes skewY {
+  0% {
+    transform: skewY(0deg);
+  }
+  50% {
+    transform: skewY(40deg);
+  }
+  100%{
+    transform: skewY(0deg);
+  }
 }
-div:nth-child(4):hover {
-  transform: translateX( -60px) ;
+}
+div:nth-child(3) {
+  animation-name: skew ;
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+}
+@keyframes skew {
+  0% {
+    transform: skew(0deg);
+  }
+  50% {
+    transform: skew(40deg);
+  }
+  100%{
+    transform: skew(0deg);
+  }
+}
+div:nth-child(4) {
+
+  animation-name: translateX ;
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+}
+@keyframes translateX {
+  0% {
+    transform: translateX(0px);
+  }
+  50% {
+    transform: translateX(-60px);
+  }
+  100%{
+    transform: translateX(0px);
+  }
 }
 div:nth-child(5):hover {
   transform: translateY( -10px) ;
 }
+@keyframes skewY {
+  0% {
+    transform: skewY(0deg);
+  }
+  50% {
+    transform: skewY(40deg);
+  }
+  100%{
+    transform: skewY(0deg);
+  }
+}
 div:nth-child(6):hover {
   transform: translateZ( -50px) ;
+}
+@keyframes skewY {
+  0% {
+    transform: skewY(0deg);
+  }
+  50% {
+    transform: skewY(40deg);
+  }
+  100%{
+    transform: skewY(0deg);
+  }
 }
 div:nth-child(7):hover {
   transform: translate( -10px, -10px) ;
 }
+@keyframes skewY {
+  0% {
+    transform: skewY(0deg);
+  }
+  50% {
+    transform: skewY(40deg);
+  }
+  100%{
+    transform: skewY(0deg);
+  }
+}
 div:nth-child(8):hover {
   transform: rotateX(50deg) ;
+}
+@keyframes skewY {
+  0% {
+    transform: skewY(0deg);
+  }
+  50% {
+    transform: skewY(40deg);
+  }
+  100%{
+    transform: skewY(0deg);
+  }
 }
 div:nth-child(9):hover {
   transform: rotateY(50deg) ;
 }
+@keyframes skewY {
+  0% {
+    transform: skewY(0deg);
+  }
+  50% {
+    transform: skewY(40deg);
+  }
+  100%{
+    transform: skewY(0deg);
+  }
+}
 div:nth-child(10):hover {
   transform: rotateZ(50deg) ;
+}
+@keyframes skewY {
+  0% {
+    transform: skewY(0deg);
+  }
+  50% {
+    transform: skewY(40deg);
+  }
+  100%{
+    transform: skewY(0deg);
+  }
 }
 div:nth-child(11):hover {
   transform: rotate(50deg) ;
 }
+@keyframes skewY {
+  0% {
+    transform: skewY(0deg);
+  }
+  50% {
+    transform: skewY(40deg);
+  }
+  100%{
+    transform: skewY(0deg);
+  }
+}
 div:nth-child(12):hover {
   transform: scale(2, .5);
+}
+@keyframes skewY {
+  0% {
+    transform: skewY(0deg);
+  }
+  50% {
+    transform: skewY(40deg);
+  }
+  100%{
+    transform: skewY(0deg);
+  }
 }
 div:nth-child(13):hover {
   transform: scaleY(2);
 }
+@keyframes skewY {
+  0% {
+    transform: skewY(0deg);
+  }
+  50% {
+    transform: skewY(40deg);
+  }
+  100%{
+    transform: skewY(0deg);
+  }
+}
 div:nth-child(14):hover {
   transform: scaleX(2);
 }
-div:nth-child(15):hover {
-  transform: scaleZ(2);
+@keyframes skewY {
+  0% {
+    transform: skewY(0deg);
+  }
+  50% {
+    transform: skewY(40deg);
+  }
+  100%{
+    transform: skewY(0deg);
+  }
+}
+div:nth-child(15) {
+  
+  animation-name: scaleZ ;
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+}
+@keyframes scaleZ {
+  0% {
+    transform: scaleZ(2);
+  }
+  50% {
+    transform: scaleZ(2);
+  }
+  100%{
+    transform: scaleZ(2);
+  }
 }
