@@ -108,18 +108,21 @@ div:nth-child(5) {
     transform: translateY(0px);
   }
 }
-div:nth-child(6):hover {
-  transform: translateZ( -50px) ;
+div:nth-child(6) {
+  animation-name: translateZ ;
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
 }
-@keyframes skewY {
+@keyframes  translateZ {
   0% {
-    transform: skewY(0deg);
+    transform:  translateZ(0px);
   }
   50% {
-    transform: skewY(40deg);
+    transform:  translateZ(-50px);
   }
   100%{
-    transform: skewY(0deg);
+    transform:  translateZ(0px);
   }
 }
 div:nth-child(7):hover {
